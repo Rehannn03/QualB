@@ -46,14 +46,4 @@ dataRouter.get('/data',async (req,res)=>{
     }
 })
 
-dataRouter.get('/delete',async (req,res)=>{
-    const deleteData=await prisma.data.deleteMany()
-    if(deleteData){
-        return res.status(200).json({message:'Data deleted successfully'})
-    }
-    else{
-        res.json({message:'Data not deleted'})
-    }
-})
-
 export default dataRouter
