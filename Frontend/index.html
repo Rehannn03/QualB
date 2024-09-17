@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hodlinfo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">HODLINFO</div>
+            <div class="nav">
+                <button>INR</button>
+                <div class="dropdown">
+                    <button class="dropbtn" id="currencyButton">BTC</button>
+                    <div class="dropdown-content" id="cryptoDropdown"></div>
+                </div>
+                <button id="buy-btn">BUY BTC</button>
+            </div>
+            <button class="telegram-btn">Connect Telegram</button>
+        </header>
+
+        <div class="price-section">
+            <div class="price-details">
+                <div class="percent">0.1% <br> 5 Mins</div>
+                <div class="percent">0.96% <br> 1 Hour</div>
+                <div class="best-price" id="bestPrice">₹ 0</div>
+                <div class="percent">2.73% <br> 1 Day</div>
+                <div class="percent">7.51% <br> 7 Days</div>
+            </div>
+            <p class="description">Average BTC/INR net price including commission</p>
+        </div>
+
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Platform</th>
+                    <th>Last Traded Price</th>
+                    <th>Buy / Sell Price</th>
+                    <th>Difference</th>
+                    <th>Savings</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>WazirX</td>
+                    <td>₹ 25,72,612</td>
+                    <td>₹ 25,72,610 / ₹ 25,72,612</td>
+                    <td class="loss">-3.14%</td>
+                    <td class="loss">₹ 83,498</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Bitbns</td>
+                    <td>₹ 28,83,906</td>
+                    <td>₹ 28,55,164 / ₹ 28,82,157</td>
+                    <td class="gain">8.58%</td>
+                    <td class="gain">₹ 2,227,796</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Colodax</td>
+                    <td>₹ 25,46,035</td>
+                    <td>₹ 25,33,304 / ₹ 25,81,559</td>
+                    <td class="loss">-4.14%</td>
+                    <td class="loss">₹ 1,110,074</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Zebpay</td>
+                    <td>₹ 26,50,000</td>
+                    <td>₹ 26,49,999 / ₹ 26,21,000</td>
+                    <td class="loss">-0.23%</td>
+                    <td class="loss">₹ 6,110</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

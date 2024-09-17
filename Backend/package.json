@@ -1,0 +1,21 @@
+{
+  "name": "qualb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev":"nodemon index.js"
+  },
+  "author": "Rehan Shah",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.19.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "prisma": "^5.19.1"
+  }
+}
